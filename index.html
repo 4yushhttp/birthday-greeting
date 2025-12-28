@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" src="assests/Coldplay - Sparks - Somber Sounds.mp3" autoplay loop></audio>
+
+  <div class="container">
+    <nav>
+      <button onclick="showPage('home')">🏠 Home</button>
+      <button onclick="showPage('memories')">📸 pookie</button>
+      <button onclick="showPage('wishes')">💌 Wishes</button>
+      <button onclick="showPage('surprise')">🎁 you toh know na</button>
+      <button onclick="showPage('game')">🎮 Cut Your Cake</button>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <h1>🎂 Happy Birthday, ayush! 🎉</h1>
+      <p>looks like someone is turning 21 💖</p>
+      <p>This is all for you</p>
+      <p>but wait !</p>
+      <P>Is this the same girl who used to catch housefly and trap them in the box</P>
+      <p>if yes , you can proceed further</p>
+      <p>And haa i would love to be a housefly if you are trapping me inside the box LOL</p>
+      
+    </section>
+
+    <!-- MEMORIES -->
+    <section id="memories" class="page">
+      <h1>yeh heroine kon hai 💕</h1>
+      <div class="gallery">
+        <img src="assests/photo.jpeg" alt="">
+        <img src="assets/images/pic2.jpg" alt="">
+        <img src="assets/images/pic3.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- WISHES -->
+    <section id="wishes" class="page">
+      <h1>Heartfelt Wishes 💌</h1>
+      <p>May your life be filled with joy, laughter, and endless love 💫</p>
+      <p>
+     From the endless laughter we’ve shared to the quiet moments that said everything without a word — 
+     every memory with you feels like a page from my favorite story. 
+     I still remember the silly jokes, the unexpected adventures probably the rainy one , 
+     and how talking with you could turn an ordinary day into something magical. 
+     You’ve been my constant light through every season i mean it's very less i only met you for a month but it was so beautiful and all the people surrounded were so beautifull,
+      and every second spent with you has become a piece of my heart I’ll cherish forever. On your special day, 
+      I just want you to know how deeply you’re loved — not just today, but in every moment that’s yet to come. 💫❤️
+       </p>
+    </section>
+
+   <!-- SURPRISE -->
+<section id="surprise" class="page">
+  <h1>🎉 Once again, Happy Birthday 🎉</h1>
+  <h1> The things I found beautiful are in this video</h1>
+
+  <!-- Video Message -->
+  <video id="videomsg" preload="metadata" style="display:block;margin:15px auto;border-radius:20px;max-width:500px;">
+    <source src="assests\video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div style="margin-bottom:20px;">
+    <button id="playVideoBtn">💖 Play Video</button>
+    <button id="pauseVideoBtn">⏸ Pause Video</button>
+  </div>
+  <p>You’re amazing! Have a magical year ahead 🥳</p>
+  <p>Hope one day you see me like how I saw you every minute, and if I look like a fool for doing it again and again, I must do it once more.</p>
+  <p>Ohh, to be surrounded by your presence, your laugh, and my jokes. Ohh, to be with you and see you smile over and over again.</p>
+  <p>I don't know how you feel about me, but I never saw someone like I saw you, and probably it's not just about the aesthetics but the light you carry, the talks you do, and the thoughts you have. Yes, I admire you whenever I look at you.</p>
+  <p>It's too early to ask for, but I will wait till I make myself a strong man who stands for self and for others too.</p>
+  <p>I may sound like a freak or whatever you think, but I would love to be with you and be completed by you.</p>
+  <p>Just in case you ever felt lost and sad, just remember you are loved in many ways through my eyes.</p>
+  <p>I want you to go for the conversation that you were not ready to tell yourself.</p>
+  <p>And yes, I'll be there every moment.</p>
+  <p>I promise you this: I always look out for you.</p>
+
+  <div id="balloon-container"></div>
+
+  <div id="slideshow-container">
+    <div class="slide active">
+      <img src="assets/photo.jpeg" alt="Memory 1">
+    </div>
+    <div class="slide">
+      <img src="assets/pic2.jpg" alt="Memory 2">
+    </div>
+    <div class="slide">
+      <img src="assets/pic3.jpg" alt="Memory 3">
+    </div>
+    <div class="slide">
+      <p class="end-message">Happy Birthday, my favorite person 💖</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 🎮 CUT YOUR CAKE SECTION -->
+<section id="game" class="page">
+  <h1>🎂 Cut Your Cake</h1>
+  <p>Move the cake away from me before I eat it 😋</p>
+
+  <div id="game-area">
+    <img id="player" src="assests/photo1.jpeg" alt="You">
+    <img id="cake" src="assests/cake.jpeg" alt="Cake">
+    <div id="countdown"></div>
+  </div>
+
+  <p id="game-message"></p>
+
+  <button id="start-btn">Start Game 🎮</button>
+</section>
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
